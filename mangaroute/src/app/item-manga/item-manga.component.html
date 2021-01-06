@@ -1,0 +1,8 @@
+<div *ngIf="manga">
+  <a href (click)="back()">Indietro</a>
+  <h1>{{manga.name}}</h1>
+  <p>
+    <img src="{{manga.image_url}}">
+  </p>
+  {{manga | json}}
+</div>
